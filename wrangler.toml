@@ -1,0 +1,19 @@
+# 线上 Worker 的唯一名字，改成你自己的
+name = "my-worker"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+# 可选：静态资源 + Worker 同仓库（类似 Pages）
+# [assets]
+# directory = "./public"
+# binding = "ASSETS"
+
+# 可选：KV 绑定，id 在 Cloudflare 面板 → Workers & Pages → KV 里创建后获得
+# [[kv_namespaces]]
+# binding = "MY_KV"
+# id = "在此填 KV namespace id"
+
+# 可选：挂自定义域名（域名必须已托管在同一个 Cloudflare 账号）
+# [[routes]]
+# pattern = "app.example.com"
+# custom_domain = true
